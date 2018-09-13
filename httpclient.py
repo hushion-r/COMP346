@@ -2,6 +2,8 @@ import socket
 import string
 import urllib
 
+# worked with Jeremy
+
 class HttpResponse:
     """
         Holds a structured http response.
@@ -65,7 +67,8 @@ class HttpClient:
             Returns a string containing an HTTP 1.0 GET request
             for self.host and the requested path.
         """
-        return "GET " + path + " HTTP/1.0"  # need to add self.host into request?
+        request = "GET " + path + " HTTP/1.0\r\nHost: " + self.host + "\r\n\r\n"
+        return request
     
     def _constructPostRequest(self, path, body):
         """
@@ -92,11 +95,13 @@ class HttpClient:
         responseLines = self._readResponseStr(sock).split('\r\n')
         print(responseLines)
         response = HttpResponse()
-        response.headers["Host"] = self.host
+        response.headers["Host"] = self.host    # necessary?
+        response.statusCode = int(responseLines[0][9:12])
         for items in responseLines:
             if ":" in items:
-                header_and_info = items.split(": ")
-                response.headers[header_and_info[0]] = header_and_info[1]
+                headerAndInfo = items.split(": ")
+                response.headers[headerAndInfo[0]] = headerAndInfo[1]
+            print(response.headers)
 
         
         # TODO: fill in the member variables for the http response object
