@@ -97,11 +97,12 @@ class HttpClient:
         response = HttpResponse()
         response.headers["Host"] = self.host    # necessary?
         response.statusCode = int(responseLines[0][9:12])
+        response.statusMessage = responseLines[0][13:]
         for items in responseLines:
             if ":" in items:
                 headerAndInfo = items.split(": ")
                 response.headers[headerAndInfo[0]] = headerAndInfo[1]
-            print(response.headers)
+        print(response.headers)
 
         
         # TODO: fill in the member variables for the http response object
