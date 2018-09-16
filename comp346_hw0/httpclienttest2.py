@@ -9,7 +9,7 @@ class TestHttpClient(httpclienttest1.TestHttpClient):
         client = httpclient.HttpClient('httpbin.org')
         response = client.doPost('/post', 'Foo=Bar')
         data = json.loads(response.body)
-        self.assertEquals(data['form']['Foo'], 'Bar')
+        self.assertEqual(data['form']['Foo'], 'Bar')
     
 if __name__ == '__main__':
     unittest.main()

@@ -67,7 +67,8 @@ class HttpClient:
             Returns a string containing an HTTP 1.0 GET request
             for self.host and the requested path.
         """
-        request = "GET " + path + " HTTP/1.0\r\nHost: " + self.host + "\r\n\r\n"
+        request = "GET " + path + " HTTP/1.0\r\n"\
+                  + "Host: " + self.host + "\r\n\r\n"
         return request
     
     def _constructPostRequest(self, path, body):
@@ -75,10 +76,12 @@ class HttpClient:
             Returns a string containing an HTTP 1.0 GET request
             for self.host and the requested path and body.
         """
-        postRequest = path + "HTTP/1.0\r\n"
-        postRequest += "Host : httpbin.org:80\r\n"
-        postRequest += "Content-Type: application/x-www-form-urlencoded\r\n"
-        postRequest += "Content-Length: 7\r\n"
+        postRequest = "POST " + path + " HTTP/1.0\r\n"\
+                      + "Host: " + self.host + "\r\n" \
+                      + "Content-Type: application/x-www-form-urlencoded\r\n" \
+                      + "Content-Length: " + str(len(body)) + "\r\n\r\n" \
+                      + body + "\r\n\r\n"
+        print(postRequest)
 
         return postRequest
     
@@ -99,7 +102,7 @@ class HttpClient:
         """
         responseLines = self._readResponseStr(sock).split('\r\n')
         response = HttpResponse()
-        # print("r: " + str(responseLines))
+        print("r: " + str(responseLines))
         response.headers["Host"] = self.host    # necessary?
         response.statusCode = int(responseLines[0][9:12])
         response.statusMessage = responseLines[0][13:]
@@ -107,7 +110,7 @@ class HttpClient:
             if ":" in items:
                 headerAndInfo = items.split(": ")
                 response.headers[headerAndInfo[0]] = headerAndInfo[1]
-        # print("h: " + str(response.headers))
+        print("h: " + str(response.headers))
         response.body = responseLines[-1]    # supposed to be just <body> ?
         # print(response.body)
 
