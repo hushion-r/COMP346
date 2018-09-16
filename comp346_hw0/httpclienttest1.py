@@ -1,5 +1,6 @@
 import unittest
-import httpclient
+from comp346_hw0 import httpclient
+
 
 class TestHttpClient(unittest.TestCase):
     

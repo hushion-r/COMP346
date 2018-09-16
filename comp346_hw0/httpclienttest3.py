@@ -1,7 +1,7 @@
 import unittest
 import json
 
-import httpclient
+from comp346_hw0 import httpclient
 import httpclienttest2
 
 class TestHttpClient(httpclienttest2.TestHttpClient):
