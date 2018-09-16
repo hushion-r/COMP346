@@ -75,7 +75,12 @@ class HttpClient:
             Returns a string containing an HTTP 1.0 GET request
             for self.host and the requested path and body.
         """
-        return ""
+        postRequest = path + "HTTP/1.0\r\n"
+        postRequest += "Host : httpbin.org:80\r\n"
+        postRequest += "Content-Type: application/x-www-form-urlencoded\r\n"
+        postRequest += "Content-Length: 7\r\n"
+
+        return postRequest
     
     def _writeRequest(self, request):
         """
@@ -93,8 +98,8 @@ class HttpClient:
             Returns a filled-in HttpResponse object.
         """
         responseLines = self._readResponseStr(sock).split('\r\n')
-        print(responseLines)
         response = HttpResponse()
+        # print("r: " + str(responseLines))
         response.headers["Host"] = self.host    # necessary?
         response.statusCode = int(responseLines[0][9:12])
         response.statusMessage = responseLines[0][13:]
@@ -102,7 +107,9 @@ class HttpClient:
             if ":" in items:
                 headerAndInfo = items.split(": ")
                 response.headers[headerAndInfo[0]] = headerAndInfo[1]
-        print(response.headers)
+        # print("h: " + str(response.headers))
+        response.body = responseLines[-1]    # supposed to be just <body> ?
+        # print(response.body)
 
         
         # TODO: fill in the member variables for the http response object

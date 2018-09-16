@@ -16,8 +16,8 @@ class TestHttpClient(unittest.TestCase):
         response = client.doGet('/index.html')
         self.assertEqual(response.statusCode, 200)
         self.assertEqual(response.statusMessage, 'OK')
-        # self.assertEquals(response.headers['Content-Type'], 'text/html; charset=UTF-8' )
-        # self.assertTrue(response.body.find('ssen@macalester.edu') > 0)
+        self.assertEqual(response.headers['Content-Type'], 'text/html; charset=UTF-8' )
+        self.assertTrue(response.body.find('ssen@macalester.edu') > 0)
     
 if __name__ == '__main__':
     unittest.main()
