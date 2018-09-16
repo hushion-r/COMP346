@@ -11,11 +11,11 @@ class TestHttpClient(unittest.TestCase):
                 
         response = client.doGet('/nonExistentPage')
         self.assertEqual(response.statusCode, 404)
-        #self.assertEqual(response.statusMessage.lower(), 'not found')
+        self.assertEqual(response.statusMessage.lower(), 'not found')
 
         response = client.doGet('/index.html')
         self.assertEqual(response.statusCode, 200)
-        # self.assertEquals(response.statusMessage, 'OK')
+        self.assertEqual(response.statusMessage, 'OK')
         # self.assertEquals(response.headers['Content-Type'], 'text/html; charset=UTF-8' )
         # self.assertTrue(response.body.find('ssen@macalester.edu') > 0)
     

@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2043ff26-173e-4c63-ac58-e962e69a8637" name="Default Changelist" comment="Start">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="2043ff26-173e-4c63-ac58-e962e69a8637" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comp346_hw0/Tests/httpclienttest1.py" beforeDir="false" afterPath="$PROJECT_DIR$/comp346_hw0/Tests/httpclienttest1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/httpclient.py" beforeDir="false" afterPath="$PROJECT_DIR$/httpclient.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +13,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/COMP346$httpclient.coverage" NAME="httpclient Coverage Results" MODIFIED="1536872182994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/COMP346$Unittests_for_httpclienttest1_TestHttpClient.coverage" NAME="Unittests for httpclienttest1.TestHttpClient Coverage Results" MODIFIED="1536877232043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/comp346_hw0/Tests" />
+    <SUITE FILE_PATH="coverage/COMP346$Unittests_for_httpclienttest1_TestHttpClient.coverage" NAME="Unittests for httpclienttest1.TestHttpClient Coverage Results" MODIFIED="1536877443743" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/comp346_hw0/Tests" />
     <SUITE FILE_PATH="coverage/COMP346$Unittests_for_httpclienttest1_TestHttpClient_testGetMethod.coverage" NAME="Unittests for httpclienttest1.TestHttpClient.testGetMethod Coverage Results" MODIFIED="1536873645402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/comp346_hw0/Tests" />
   </component>
   <component name="FUSProjectUsageTrigger">
@@ -69,12 +67,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="306" />
+          <entry key="py" value="331" />
+          <entry key="txt" value="112" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="306" />
+          <entry key="PLAIN_TEXT" value="112" />
+          <entry key="Python" value="331" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -83,11 +83,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comp346_hw0/Tests/httpclienttest1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+            <state relative-caret-position="209">
+              <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -95,11 +95,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/httpclient.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="98" column="57" selection-start-line="98" selection-start-column="57" selection-end-line="98" selection-end-column="57" />
+            <state relative-caret-position="84">
+              <caret line="100" selection-start-line="100" selection-end-line="100" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -135,8 +135,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/getDepartureTime.py" />
-        <option value="$PROJECT_DIR$/httpclient.py" />
         <option value="$PROJECT_DIR$/comp346_hw0/Tests/httpclienttest1.py" />
+        <option value="$PROJECT_DIR$/httpclient.py" />
       </list>
     </option>
   </component>
@@ -278,21 +278,24 @@
       <option name="presentableId" value="Default" />
       <updated>1536865551991</updated>
     </task>
+    <task id="LOCAL-00001" summary="did status code thing. need to work on status message">
+      <created>1536877280489</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1536877280489</updated>
+    </task>
+    <task id="LOCAL-00002" summary="did status message.&#10;TODO: other identifiers">
+      <created>1536877488137</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1536877488137</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_httpclienttest1_TestHttpClient - 2018.09.13 at 17h 12m 51s.xml">
-      <configuration name="Unittests for httpclienttest1.TestHttpClient" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_httpclienttest1_TestHttpClient - 2018.09.13 at 17h 16m 27s.xml">
-      <configuration name="Unittests for httpclienttest1.TestHttpClient" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_httpclienttest1_TestHttpClient - 2018.09.13 at 17h 17m 01s.xml">
-      <configuration name="Unittests for httpclienttest1.TestHttpClient" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_httpclienttest1_TestHttpClient - 2018.09.13 at 17h 17m 26s.xml">
-      <configuration name="Unittests for httpclienttest1.TestHttpClient" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_httpclienttest1_TestHttpClient - 2018.09.13 at 17h 17m 37s.xml">
       <configuration name="Unittests for httpclienttest1.TestHttpClient" configurationId="tests" />
     </history-entry>
@@ -311,6 +314,18 @@
     <history-entry file="Unittests_for_httpclienttest1_TestHttpClient - 2018.09.13 at 17h 20m 32s.xml">
       <configuration name="Unittests for httpclienttest1.TestHttpClient" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_for_httpclienttest1_TestHttpClient - 2018.09.13 at 17h 22m 09s.xml">
+      <configuration name="Unittests for httpclienttest1.TestHttpClient" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_httpclienttest1_TestHttpClient - 2018.09.13 at 17h 23m 31s.xml">
+      <configuration name="Unittests for httpclienttest1.TestHttpClient" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_httpclienttest1_TestHttpClient - 2018.09.13 at 17h 23m 45s.xml">
+      <configuration name="Unittests for httpclienttest1.TestHttpClient" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_httpclienttest1_TestHttpClient - 2018.09.13 at 17h 24m 04s.xml">
+      <configuration name="Unittests for httpclienttest1.TestHttpClient" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -323,13 +338,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.254251" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17651822" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3916084" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3916084" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.34265736" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -353,6 +369,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="did status code thing. need to work on status message" />
+    <MESSAGE value="did status message.&#10;TODO: other identifiers" />
+    <option name="LAST_COMMIT_MESSAGE" value="did status message.&#10;TODO: other identifiers" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -373,22 +394,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/httpclient.py">
+    <entry file="file://$PROJECT_DIR$/comp346_hw0/Tests/httpclienttest1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="98" column="57" selection-start-line="98" selection-start-column="57" selection-end-line="98" selection-end-column="57" />
+        <state relative-caret-position="209">
+          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comp346_hw0/Tests/httpclienttest1.py">
+    <entry file="file://$PROJECT_DIR$/httpclient.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="12" column="50" lean-forward="true" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="50" />
+        <state relative-caret-position="84">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
