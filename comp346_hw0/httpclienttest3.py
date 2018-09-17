@@ -2,7 +2,7 @@ import unittest
 import json
 
 from comp346_hw0 import httpclient
-import httpclienttest2
+from comp346_hw0 import httpclienttest2
 
 class TestHttpClient(httpclienttest2.TestHttpClient):
 
@@ -10,19 +10,22 @@ class TestHttpClient(httpclienttest2.TestHttpClient):
         client = httpclient.HttpClient('httpbin.org')
         response = client.doPostWithParams('/post', {'Foo' : 'Bar'})
         data = json.loads(response.body)
-        self.assertEquals(data['form']['Foo'], 'Bar')
+        self.assertEqual(data['form']['Foo'], 'Bar')
 
     def testGetWithParams(self):
         client = httpclient.HttpClient('httpbin.org')
         response = client.doGetWithParams('/get', {'Foo' : 'Bar', 'foo' : 'bar'})
         data = json.loads(response.body)
-        self.assertEquals(data['args'], {'Foo' : 'Bar', 'foo' : 'bar'})
+        self.assertEqual(data['args'], {'Foo' : 'Bar', 'foo' : 'bar'})
     
     def testGetParamEncoding(self):
         client = httpclient.HttpClient('httpbin.org')
         response = client.doGetWithParams('/get', {'$foo' : 'bar &z' })
+        print("body: " + str(response.body))
+        print(response.body)
+
         data = json.loads(response.body)
-        self.assertEquals(data['args'], {'$foo' : 'bar &z' })
+        self.assertEqual(data['args'], {'$foo' : 'bar &z' })
     
 if __name__ == '__main__':
     unittest.main()

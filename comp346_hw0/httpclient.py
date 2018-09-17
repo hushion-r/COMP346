@@ -1,6 +1,7 @@
 import socket
 import string
 import urllib
+import urllib.parse
 
 # worked with Jeremy
 
@@ -15,7 +16,7 @@ class HttpResponse:
         self.statusMessage = 'OK'
         self.headers = {}
         self.body = ''
-    
+
     def __repr__(self):
         return (
                 'status=%s headers=%s body=%s...' %
@@ -35,7 +36,9 @@ class HttpClient:
             as an HttpResponse object.
         """
         sock = self._writeRequest(self._constructGetRequest(path))
-        return self._readResponse(sock)
+        result = self._readResponse(sock)
+        sock.close()
+        return result
         
     def doPost(self, path, body):
         """
@@ -43,7 +46,10 @@ class HttpClient:
             as an HttpResponse object.
         """
         sock = self._writeRequest(self._constructPostRequest(path, body))
-        return self._readResponse(sock)
+        result = self._readResponse(sock)
+        sock.close()
+        return result
+
     
     def doGetWithParams(self, path, params):
         """
@@ -51,8 +57,14 @@ class HttpClient:
             Params should be a dictionary of unencoded query parameters
             as an HttpResponse object.
         """
-        
-        return ""
+        URLEncodedParams = "?"
+        for items in params:
+            URLEncodedParams += urllib.parse.quote_plus(items) + "=" + urllib.parse.quote_plus(params[items]) + "&"
+        URLEncodedParams = URLEncodedParams[0:-1]
+        getParams = self._constructGetRequest(path + URLEncodedParams)
+        print("get request: " + str(getParams))
+        # return getParams
+        return self.doGet(path+URLEncodedParams)
     
     def doPostWithParams(self, path, params):
         """
@@ -60,9 +72,10 @@ class HttpClient:
             Params should be a dictionary of unencoded query parameters
             as an HttpResponse object.
         """
+        print("params: " + str(params))
         return ""
     
-    def _constructGetRequest(self, path):   # TODO: PT1
+    def _constructGetRequest(self, path):
         """
             Returns a string containing an HTTP 1.0 GET request
             for self.host and the requested path.
@@ -81,8 +94,6 @@ class HttpClient:
                       + "Content-Type: application/x-www-form-urlencoded\r\n" \
                       + "Content-Length: " + str(len(body)) + "\r\n\r\n" \
                       + body + "\r\n\r\n"
-        print(postRequest)
-
         return postRequest
     
     def _writeRequest(self, request):
@@ -95,14 +106,13 @@ class HttpClient:
         s.send(request.encode('utf-8'))
         return s
     
-    def _readResponse(self, sock):  # TODO PT1
+    def _readResponse(self, sock):
         """
             Reads in a response from a socket object.
             Returns a filled-in HttpResponse object.
         """
         responseLines = self._readResponseStr(sock).split('\r\n')
         response = HttpResponse()
-        print("r: " + str(responseLines))
         response.headers["Host"] = self.host    # necessary?
         response.statusCode = int(responseLines[0][9:12])
         response.statusMessage = responseLines[0][13:]
@@ -110,7 +120,6 @@ class HttpClient:
             if ":" in items:
                 headerAndInfo = items.split(": ")
                 response.headers[headerAndInfo[0]] = headerAndInfo[1]
-        print("h: " + str(response.headers))
         response.body = responseLines[-1]    # supposed to be just <body> ?
         # print(response.body)
 
