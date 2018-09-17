@@ -10,6 +10,7 @@ class TestHttpClient(httpclienttest2.TestHttpClient):
         client = httpclient.HttpClient('httpbin.org')
         response = client.doPostWithParams('/post', {'Foo' : 'Bar'})
         data = json.loads(response.body)
+        print(data)
         self.assertEqual(data['form']['Foo'], 'Bar')
 
     def testGetWithParams(self):
@@ -21,8 +22,6 @@ class TestHttpClient(httpclienttest2.TestHttpClient):
     def testGetParamEncoding(self):
         client = httpclient.HttpClient('httpbin.org')
         response = client.doGetWithParams('/get', {'$foo' : 'bar &z' })
-        print("body: " + str(response.body))
-        print(response.body)
 
         data = json.loads(response.body)
         self.assertEqual(data['args'], {'$foo' : 'bar &z' })

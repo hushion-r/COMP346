@@ -4,7 +4,7 @@
     <list default="true" id="2043ff26-173e-4c63-ac58-e962e69a8637" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comp346_hw0/httpclient.py" beforeDir="false" afterPath="$PROJECT_DIR$/comp346_hw0/httpclient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comp346_hw0/httpclienttest2.py" beforeDir="false" afterPath="$PROJECT_DIR$/comp346_hw0/httpclienttest2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comp346_hw0/httpclienttest3.py" beforeDir="false" afterPath="$PROJECT_DIR$/comp346_hw0/httpclienttest3.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,11 +13,16 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/COMP346$httpclient.coverage" NAME="httpclient Coverage Results" MODIFIED="1536872182994" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/COMP346$httpclient.coverage" NAME="httpclient Coverage Results" MODIFIED="1537141368981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/comp346_hw0" />
+    <SUITE FILE_PATH="coverage/COMP346$Unittests_for_httpclienttest3_TestHttpClient_testGetWithParams.coverage" NAME="Unittests for httpclienttest3.TestHttpClient.testGetWithParams Coverage Results" MODIFIED="1537143128187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/comp346_hw0" />
+    <SUITE FILE_PATH="coverage/COMP346$Unittests_for_httpclienttest3_TestHttpClient_testPostWithParams.coverage" NAME="Unittests for httpclienttest3.TestHttpClient.testPostWithParams Coverage Results" MODIFIED="1537143185969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/comp346_hw0" />
     <SUITE FILE_PATH="coverage/COMP346$Unittests_in_httpclienttest1_py.coverage" NAME="Unittests in httpclienttest1.py Coverage Results" MODIFIED="1537132897092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/comp346_hw0/Tests" />
-    <SUITE FILE_PATH="coverage/COMP346$Unittests_for_httpclienttest2_TestHttpClient_testPostMethod.coverage" NAME="Unittests for httpclienttest2.TestHttpClient.testPostMethod Coverage Results" MODIFIED="1537135537395" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/comp346_hw0" />
+    <SUITE FILE_PATH="coverage/COMP346$Unittests_for_httpclienttest2_TestHttpClient_testPostMethod.coverage" NAME="Unittests for httpclienttest2.TestHttpClient.testPostMethod Coverage Results" MODIFIED="1537140213926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/comp346_hw0" />
+    <SUITE FILE_PATH="coverage/COMP346$Unittests_in_httpclienttest3_py.coverage" NAME="Unittests in httpclienttest3.py Coverage Results" MODIFIED="1537143363105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/comp346_hw0" />
     <SUITE FILE_PATH="coverage/COMP346$Unittests_for_httpclienttest1_TestHttpClient.coverage" NAME="Unittests for httpclienttest1.TestHttpClient Coverage Results" MODIFIED="1537132845538" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/comp346_hw0/Tests" />
     <SUITE FILE_PATH="coverage/COMP346$Unittests_for_httpclienttest1_TestHttpClient_testGetMethod.coverage" NAME="Unittests for httpclienttest1.TestHttpClient.testGetMethod Coverage Results" MODIFIED="1536873645402" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/comp346_hw0/Tests" />
+    <SUITE FILE_PATH="coverage/COMP346$Unittests_for_httpclienttest2_TestHttpClient.coverage" NAME="Unittests for httpclienttest2.TestHttpClient Coverage Results" MODIFIED="1537143216063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/comp346_hw0" />
+    <SUITE FILE_PATH="coverage/COMP346$Unittests_for_httpclienttest3_TestHttpClient.coverage" NAME="Unittests for httpclienttest3.TestHttpClient Coverage Results" MODIFIED="1537143799003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/comp346_hw0" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="633560069">
@@ -60,24 +65,24 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="6" />
+          <entry key="py" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="6" />
+          <entry key="Python" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="783" />
-          <entry key="txt" value="181" />
+          <entry key="py" value="1242" />
+          <entry key="txt" value="249" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="181" />
-          <entry key="Python" value="783" />
+          <entry key="PLAIN_TEXT" value="249" />
+          <entry key="Python" value="1242" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -98,11 +103,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/comp346_hw0/httpclienttest2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+            <state relative-caret-position="221">
+              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -110,13 +115,26 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/comp346_hw0/httpclient.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="83" column="26" lean-forward="true" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="26" />
+            <state relative-caret-position="63">
+              <caret line="72" column="28" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
+                <marker date="1537143798987" expanded="true" signature="2529:2538" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/comp346_hw0/httpclienttest3.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="167">
+              <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -140,8 +158,10 @@
       <find>getrequest</find>
       <find>readres</find>
       <find>sock</find>
-      <find>print</find>
       <find>readresponse</find>
+      <find>dopo</find>
+      <find>print</find>
+      <find>body</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -154,8 +174,9 @@
         <option value="$PROJECT_DIR$/comp346_hw0/Tests/httpclienttest1.py" />
         <option value="$PROJECT_DIR$/httpclient.py" />
         <option value="$PROJECT_DIR$/comp346_hw0/Tests/httpclienttest2.py" />
-        <option value="$PROJECT_DIR$/comp346_hw0/httpclient.py" />
         <option value="$PROJECT_DIR$/comp346_hw0/httpclienttest2.py" />
+        <option value="$PROJECT_DIR$/comp346_hw0/httpclienttest3.py" />
+        <option value="$PROJECT_DIR$/comp346_hw0/httpclient.py" />
       </list>
     </option>
   </component>
@@ -229,60 +250,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for httpclienttest2.TestHttpClient.testPostMethod">
-    <configuration name="httpclient" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="COMP346" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\p1xelcorn\PycharmProjects\COMP346\comp346_hw0\httpclient.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for comp346_hw0.httpclienttest1.TestHttpClient" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="COMP346" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/comp346_hw0/Tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;comp346_hw0.httpclienttest1.TestHttpClient&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for comp346_hw0.httpclienttest1.TestHttpClient.testGetMethod" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="COMP346" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/comp346_hw0/Tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;comp346_hw0.httpclienttest1.TestHttpClient.testGetMethod&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for httpclienttest2.TestHttpClient.testPostMethod" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Unittests for httpclienttest3.TestHttpClient">
+    <configuration name="Unittests for httpclienttest2.TestHttpClient" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="COMP346" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -293,39 +262,84 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;httpclienttest2.TestHttpClient.testPostMethod&quot;" />
+      <option name="_new_target" value="&quot;httpclienttest2.TestHttpClient&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in httpclienttest1.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for httpclienttest3.TestHttpClient" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="COMP346" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/comp346_hw0/Tests" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/comp346_hw0" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/comp346_hw0/httpclienttest1.py&quot;" />
+      <option name="_new_target" value="&quot;httpclienttest3.TestHttpClient&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for httpclienttest3.TestHttpClient.testGetWithParams" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="COMP346" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/comp346_hw0" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;httpclienttest3.TestHttpClient.testGetWithParams&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for httpclienttest3.TestHttpClient.testPostWithParams" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="COMP346" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/comp346_hw0" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;httpclienttest3.TestHttpClient.testPostWithParams&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in httpclienttest3.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="COMP346" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/comp346_hw0" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/comp346_hw0/httpclienttest3.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.Unittests for comp346_hw0.httpclienttest1.TestHttpClient" />
-      <item itemvalue="Python.httpclient" />
-      <item itemvalue="Python tests.Unittests for comp346_hw0.httpclienttest1.TestHttpClient.testGetMethod" />
-      <item itemvalue="Python tests.Unittests in httpclienttest1.py" />
-      <item itemvalue="Python tests.Unittests for httpclienttest2.TestHttpClient.testPostMethod" />
+      <item itemvalue="Python tests.Unittests for httpclienttest3.TestHttpClient" />
+      <item itemvalue="Python tests.Unittests for httpclienttest3.TestHttpClient.testPostWithParams" />
+      <item itemvalue="Python tests.Unittests for httpclienttest3.TestHttpClient.testGetWithParams" />
+      <item itemvalue="Python tests.Unittests for httpclienttest2.TestHttpClient" />
+      <item itemvalue="Python tests.Unittests in httpclienttest3.py" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for httpclienttest2.TestHttpClient.testPostMethod" />
-        <item itemvalue="Python tests.Unittests in httpclienttest1.py" />
-        <item itemvalue="Python tests.Unittests for comp346_hw0.httpclienttest1.TestHttpClient" />
-        <item itemvalue="Python tests.Unittests for comp346_hw0.httpclienttest1.TestHttpClient.testGetMethod" />
-        <item itemvalue="Python.httpclient" />
+        <item itemvalue="Python tests.Unittests for httpclienttest3.TestHttpClient" />
+        <item itemvalue="Python tests.Unittests in httpclienttest3.py" />
+        <item itemvalue="Python tests.Unittests for httpclienttest2.TestHttpClient" />
+        <item itemvalue="Python tests.Unittests for httpclienttest3.TestHttpClient.testPostWithParams" />
+        <item itemvalue="Python tests.Unittests for httpclienttest3.TestHttpClient.testGetWithParams" />
       </list>
     </recent_temporary>
   </component>
@@ -375,39 +389,53 @@
       <option name="project" value="LOCAL" />
       <updated>1537133999650</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="finished pt 2. constructPostRequest">
+      <created>1537135590423</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1537135590423</updated>
+    </task>
+    <task id="LOCAL-00007" summary="finished doGetWithParams()">
+      <created>1537143093313</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1537143093313</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_httpclienttest2_TestHttpClient_testPostMethod - 2018.09.16 at 16h 45m 39s.xml">
-      <configuration name="Unittests for httpclienttest2.TestHttpClient.testPostMethod" configurationId="tests" />
+    <history-entry file="Unittests_for_httpclienttest2_TestHttpClient - 2018.09.16 at 19h 13m 49s.xml">
+      <configuration name="Unittests for httpclienttest2.TestHttpClient" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_httpclienttest2_TestHttpClient_testPostMethod - 2018.09.16 at 16h 47m 43s.xml">
-      <configuration name="Unittests for httpclienttest2.TestHttpClient.testPostMethod" configurationId="tests" />
+    <history-entry file="Unittests_for_httpclienttest3_TestHttpClient - 2018.09.16 at 19h 15m 52s.xml">
+      <configuration name="Unittests for httpclienttest3.TestHttpClient" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_httpclienttest2_TestHttpClient_testPostMethod - 2018.09.16 at 16h 56m 37s.xml">
-      <configuration name="Unittests for httpclienttest2.TestHttpClient.testPostMethod" configurationId="tests" />
+    <history-entry file="Unittests_in_httpclienttest3_py - 2018.09.16 at 19h 16m 23s.xml">
+      <configuration name="Unittests in httpclienttest3.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_httpclienttest2_TestHttpClient_testPostMethod - 2018.09.16 at 16h 57m 20s.xml">
-      <configuration name="Unittests for httpclienttest2.TestHttpClient.testPostMethod" configurationId="tests" />
+    <history-entry file="Unittests_for_httpclienttest3_TestHttpClient - 2018.09.16 at 19h 16m 39s.xml">
+      <configuration name="Unittests for httpclienttest3.TestHttpClient" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_httpclienttest2_TestHttpClient_testPostMethod - 2018.09.16 at 16h 57m 32s.xml">
-      <configuration name="Unittests for httpclienttest2.TestHttpClient.testPostMethod" configurationId="tests" />
+    <history-entry file="Unittests_for_httpclienttest3_TestHttpClient - 2018.09.16 at 19h 19m 06s.xml">
+      <configuration name="Unittests for httpclienttest3.TestHttpClient" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_httpclienttest2_TestHttpClient_testPostMethod - 2018.09.16 at 16h 57m 34s.xml">
-      <configuration name="Unittests for httpclienttest2.TestHttpClient.testPostMethod" configurationId="tests" />
+    <history-entry file="Unittests_for_httpclienttest3_TestHttpClient - 2018.09.16 at 19h 20m 26s.xml">
+      <configuration name="Unittests for httpclienttest3.TestHttpClient" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_httpclienttest2_TestHttpClient_testPostMethod - 2018.09.16 at 16h 59m 32s.xml">
-      <configuration name="Unittests for httpclienttest2.TestHttpClient.testPostMethod" configurationId="tests" />
+    <history-entry file="Unittests_for_httpclienttest3_TestHttpClient - 2018.09.16 at 19h 21m 41s.xml">
+      <configuration name="Unittests for httpclienttest3.TestHttpClient" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_httpclienttest2_TestHttpClient_testPostMethod - 2018.09.16 at 17h 03m 17s.xml">
-      <configuration name="Unittests for httpclienttest2.TestHttpClient.testPostMethod" configurationId="tests" />
+    <history-entry file="Unittests_for_httpclienttest3_TestHttpClient - 2018.09.16 at 19h 23m 01s.xml">
+      <configuration name="Unittests for httpclienttest3.TestHttpClient" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_httpclienttest2_TestHttpClient_testPostMethod - 2018.09.16 at 17h 04m 23s.xml">
-      <configuration name="Unittests for httpclienttest2.TestHttpClient.testPostMethod" configurationId="tests" />
+    <history-entry file="Unittests_for_httpclienttest3_TestHttpClient - 2018.09.16 at 19h 23m 18s.xml">
+      <configuration name="Unittests for httpclienttest3.TestHttpClient" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_httpclienttest2_TestHttpClient_testPostMethod - 2018.09.16 at 17h 05m 38s.xml">
-      <configuration name="Unittests for httpclienttest2.TestHttpClient.testPostMethod" configurationId="tests" />
+    <history-entry file="Unittests_for_httpclienttest3_TestHttpClient - 2018.09.16 at 19h 24m 01s.xml">
+      <configuration name="Unittests for httpclienttest3.TestHttpClient" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -421,13 +449,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="720" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18314424" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.18314424" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24959481" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35239568" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.438949" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.34265736" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -436,7 +465,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32867134" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32766616" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32867134" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -445,12 +474,12 @@
       <window_info anchor="right" id="Database" order="4" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17666127" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.18314424" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.24959481" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3584" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.8639876" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.34265736" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -480,7 +509,9 @@
     <MESSAGE value="push" />
     <MESSAGE value="finished pt 1. working on constructPostRequest" />
     <MESSAGE value="rearranged files" />
-    <option name="LAST_COMMIT_MESSAGE" value="rearranged files" />
+    <MESSAGE value="finished pt 2. constructPostRequest" />
+    <MESSAGE value="finished doGetWithParams()" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished doGetWithParams()" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/__init__.py">
@@ -512,22 +543,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comp346_hw0/httpclient.py">
+    <entry file="file://$PROJECT_DIR$/comp346_hw0/httpclienttest2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="83" column="26" lean-forward="true" selection-start-line="83" selection-start-column="26" selection-end-line="83" selection-end-column="26" />
+        <state relative-caret-position="221">
+          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/comp346_hw0/httpclienttest2.py">
+    <entry file="file://$PROJECT_DIR$/comp346_hw0/httpclienttest3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        <state relative-caret-position="167">
+          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/comp346_hw0/httpclient.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="72" column="28" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1537143798987" expanded="true" signature="2529:2538" ph="..." />
           </folding>
         </state>
       </provider>

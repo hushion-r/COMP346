@@ -61,9 +61,7 @@ class HttpClient:
         for items in params:
             URLEncodedParams += urllib.parse.quote_plus(items) + "=" + urllib.parse.quote_plus(params[items]) + "&"
         URLEncodedParams = URLEncodedParams[0:-1]
-        getParams = self._constructGetRequest(path + URLEncodedParams)
-        print("get request: " + str(getParams))
-        # return getParams
+        # getParams = self._constructGetRequest(path + URLEncodedParams)
         return self.doGet(path+URLEncodedParams)
     
     def doPostWithParams(self, path, params):
@@ -72,8 +70,11 @@ class HttpClient:
             Params should be a dictionary of unencoded query parameters
             as an HttpResponse object.
         """
-        print("params: " + str(params))
-        return ""
+        URLEncodedParams = ""
+        for items in params:
+            URLEncodedParams += urllib.parse.quote_plus(items) + "=" + urllib.parse.quote_plus(params[items]) + "&"
+        URLEncodedParams = URLEncodedParams[0:-1]
+        return self.doPost(path, URLEncodedParams)
     
     def _constructGetRequest(self, path):
         """
