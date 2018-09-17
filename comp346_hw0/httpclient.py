@@ -3,7 +3,11 @@ import string
 import urllib
 import urllib.parse
 
+# author: Rae Hushion
+# COMP 346 - 01
+#
 # worked with Jeremy
+# went to study sessions
 
 class HttpResponse:
     """
@@ -61,7 +65,6 @@ class HttpClient:
         for items in params:
             URLEncodedParams += urllib.parse.quote_plus(items) + "=" + urllib.parse.quote_plus(params[items]) + "&"
         URLEncodedParams = URLEncodedParams[0:-1]
-        # getParams = self._constructGetRequest(path + URLEncodedParams)
         return self.doGet(path+URLEncodedParams)
     
     def doPostWithParams(self, path, params):
@@ -121,13 +124,7 @@ class HttpClient:
             if ":" in items:
                 headerAndInfo = items.split(": ")
                 response.headers[headerAndInfo[0]] = headerAndInfo[1]
-        response.body = responseLines[-1]    # supposed to be just <body> ?
-        # print(response.body)
-
-        
-        # TODO: fill in the member variables for the http response object
-        # TODO: by parsing the responseLines list of strings
-        
+        response.body = responseLines[-1]
         return response 
     
     def _readResponseStr(self, sock):
